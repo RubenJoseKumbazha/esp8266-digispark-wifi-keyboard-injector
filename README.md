@@ -87,7 +87,7 @@ In `digispark_typer.ino`:
 
 | Constant | Default | Effect |
 |---|---|---|
-| `FLUSH_MS` | `300` | ms of silence before auto-typing buffered chars |
+| `FLUSH_MS` | `300 ms` | of silence before auto-typing buffered chars |
 | `DigiKeyboard.delay(20)` | `20 ms` | Delay between keystrokes — raise if keys are missed |
 
 ---
@@ -97,7 +97,7 @@ In `digispark_typer.ino`:
 | Problem | Fix |
 |---|---|
 | ESP won't connect | Double-check SSID/password, ensure 2.4 GHz network |
-| Digispark shows Code 43 in Windows | Open Device Manager → uninstall all hidden Digispark entries → reboot → replug |
+| Digispark shows Code 43 in Windows | Reflash Digispark | Open Device Manager → uninstall all hidden Digispark entries → reboot → replug |
 | Characters missing or wrong | Increase `DigiKeyboard.delay()` from 20 to 30 in `digispark_typer.ino` |
 | Digispark not detected | Wait the full 6 s after plugging in for the bootloader phase to finish |
 | Wrong characters (symbols, punctuation) | Target PC keyboard layout must be **US QWERTY** |
